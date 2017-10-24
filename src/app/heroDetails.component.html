@@ -1,0 +1,10 @@
+<div *ngIf="hero" class="hero-detail-box">
+    <h2>{{hero.name}} details!{{one}}</h2>
+    <div><label>id: </label>{{hero.id}}</div>
+    <div><label>name: </label>{{hero.name}}</div>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]="hero.name" placeholder="name">
+    </div>
+    <button type="button" name="sure" (click)="sureBtn()">确认</button>
+</div>
